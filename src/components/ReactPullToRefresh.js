@@ -22,7 +22,7 @@ export default class ReactPullToRefresh extends Component {
       WebPullToRefresh().init({
         contentEl: this.refs.refresh,
         ptrEl: this.refs.ptr,
-        bodyEl: this.refs.body,
+        bodyEl: document.body,
         distanceToRefresh: this.props.distanceToRefresh || undefined,
         loadingFunction: this.handleRefresh,
         resistance: this.props.resistance || undefined,
